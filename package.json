@@ -1,0 +1,30 @@
+{
+  "name": "domspace",
+  "version": "0.0.0",
+  "description": "Adjust the text nodes in an HTML DOM so that the document is pretty-printed when serialized",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- mocha && echo google-chrome coverage/lcov-report/index.html",
+    "lint": "eslint .",
+    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)"
+  },
+  "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.6.0",
+    "eslint-config-pretty-standard": "^2.0.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jsdom": "^12.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "prettier": "^1.14.3",
+    "unexpected": "^10.39.0"
+  },
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
+  }
+}
