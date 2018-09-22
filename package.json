@@ -1,6 +1,6 @@
 {
   "name": "domspace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Adjust the text nodes in an HTML DOM so that the document is pretty-printed when serialized",
   "main": "lib/domspace.js",
   "scripts": {
