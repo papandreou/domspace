@@ -1,8 +1,5 @@
 const config = {
-  extends: ['pretty-standard'],
-  rules: {
-    'prefer-template': 'error'
-  }
+  extends: ['pretty-standard']
 };
 
 if (process.stdin.isTTY) {
