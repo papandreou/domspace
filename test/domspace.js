@@ -80,7 +80,7 @@ describe('domspace', function() {
     expect(
       '<!DOCTYPE html><head><link rel="stylesheet" href="styles.css"></head><body><span>foo</span></body></html>',
       'to pretty print HTML',
-      '<!DOCTYPE html>\n<html>\n<head>\n  <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n  <span>foo</span>\n</body>\n</html>\n'
+      '<!DOCTYPE html><html>\n<head>\n  <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n  <span>foo</span>\n</body>\n</html>'
     );
   });
 });
