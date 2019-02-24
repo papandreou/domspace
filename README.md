@@ -18,7 +18,7 @@ npm install domspace
 
 ## Example
 
-```
+```js
 const domspace = require('domspace');
 const myDiv = document.createElement('div');
 myDiv.innerHTML = '<span><i>foo</i></span>';
