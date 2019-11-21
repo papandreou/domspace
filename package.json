@@ -7,7 +7,7 @@
     "test": "mocha",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- mocha && echo google-chrome coverage/lcov-report/index.html",
     "lint": "eslint .",
-    "ci": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)"
+    "ci": "npm test && npm run coverage"
   },
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD-3-Clause",
