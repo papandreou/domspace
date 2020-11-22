@@ -1,5 +1,5 @@
 const config = {
-  extends: ['pretty-standard']
+  extends: ['pretty-standard'],
 };
 
 if (process.stdin.isTTY) {

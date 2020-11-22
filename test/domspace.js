@@ -25,8 +25,8 @@ const expect = require('unexpected')
     }
   );
 
-describe('domspace', function() {
-  it('should pretty print a document without whitespace', function() {
+describe('domspace', function () {
+  it('should pretty print a document without whitespace', function () {
     expect(
       '<div><span>foo</span></div>',
       'to pretty print HTML fragment',
@@ -34,7 +34,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should handle multiple child with text nodes first and last', function() {
+  it('should handle multiple child with text nodes first and last', function () {
     expect(
       '<div>foo<span>bar</span>quux</div>',
       'to pretty print HTML fragment',
@@ -42,7 +42,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should handle comments', function() {
+  it('should handle comments', function () {
     expect(
       '<div><!--foo--><!--bar--></div>',
       'to pretty print HTML fragment',
@@ -50,7 +50,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should pretty print deeply nested document', function() {
+  it('should pretty print deeply nested document', function () {
     expect(
       '<div><ul><li>foo</li></ul></div>',
       'to pretty print HTML fragment',
@@ -58,7 +58,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should pretty print multiple child nodes', function() {
+  it('should pretty print multiple child nodes', function () {
     expect(
       '<div><span>foo</span><span>foo</span></div>',
       'to pretty print HTML fragment',
@@ -66,7 +66,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should reformat an already indented document', function() {
+  it('should reformat an already indented document', function () {
     expect(
       `<div>
           <span>foo</span>
@@ -76,7 +76,7 @@ describe('domspace', function() {
     );
   });
 
-  it('should format a document', function() {
+  it('should format a document', function () {
     expect(
       '<!DOCTYPE html><head><link rel="stylesheet" href="styles.css"></head><body><span>foo</span></body></html>',
       'to pretty print HTML',
