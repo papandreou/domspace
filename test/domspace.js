@@ -1,5 +1,5 @@
 const domspace = require('../lib/domspace');
-var JSDOM = require('jsdom').JSDOM;
+const JSDOM = require('jsdom').JSDOM;
 const expect = require('unexpected')
   .clone()
   .addAssertion(
