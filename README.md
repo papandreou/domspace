@@ -39,3 +39,7 @@ Output:
 ## Releases
 
 [Changelog](https://github.com/unexpectedjs/unexpected-express/blob/master/CHANGELOG.md)
+
+## License
+
+3-clause BSD license -- see the `LICENSE` file for details.
