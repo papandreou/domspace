@@ -35,3 +35,7 @@ Output:
   </span>
 </div>
 ```
+
+## Releases
+
+[Changelog](https://github.com/unexpectedjs/unexpected-express/blob/master/CHANGELOG.md)

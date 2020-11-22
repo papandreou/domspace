@@ -7,7 +7,8 @@
     "test": "mocha",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- mocha && echo google-chrome coverage/lcov-report/index.html",
     "lint": "eslint . && prettier --check '**/*.{js,json,md}'",
-    "ci": "npm test && npm run coverage"
+    "ci": "npm test && npm run coverage",
+    "preversion": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
   },
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
   "license": "BSD-3-Clause",
@@ -23,6 +24,7 @@
     "jsdom": "^16.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.0.0",
+    "offline-github-changelog": "^2.0.0",
     "prettier": "~2.2.0",
     "unexpected": "^11.0.0"
   },
