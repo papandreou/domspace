@@ -20,7 +20,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^5.1.1",
     "jsdom": "^16.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.0.0",
